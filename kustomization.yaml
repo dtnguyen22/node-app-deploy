@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kinda: Kustomization
+
+images:
+  - name: ubnd/node-app
+    newTag: latest
+
+resources:
+  - application.yaml
+  - dev/deployment.yaml
+  - dev/service.yaml
