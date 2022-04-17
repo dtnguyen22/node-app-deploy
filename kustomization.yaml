@@ -3,7 +3,7 @@ kind: Kustomization
 
 images:
   - name: ubnd/node-app
-    newTag: 9
+    newTag: 10
 
 resources:
   - application.yaml
