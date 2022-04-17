@@ -3,6 +3,10 @@ kind: Application
 metadata:
   name: nodeapp-argo-application
   namespace: argocd
+  annotations:
+  argocd-image-updater.argoproj.io/image-list: nodeapp-image=ubnd/node-app
+  argocd-image-updater.argoproj.io/nodeapp-image.update-strategy: latest
+
 spec:
   project: default
 
