@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nodeapp
-          image: ubnd/node-app:17
+          image: ubnd/node-app:18
           ports:
             - containerPort: 8080
