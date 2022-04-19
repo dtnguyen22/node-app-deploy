@@ -11,13 +11,17 @@ spec:
     targetRevision: HEAD
     path: dev
   destination:
+    #internal kubernetes server
     server: https://kubernetes.default.svc
     namespace: myapp
 
   syncPolicy:
+    #create ns if does not exist
     syncOptions:
       - CreateNamespace=true
 
     automated:
+      #undo manually changes
       selfHeal: true
+      #auto delete old resources after sync
       prune: true
