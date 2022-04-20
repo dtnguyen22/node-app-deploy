@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: nodeapp
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: nodeapp
-          image: ubnd/node-app:20
+          image: ubnd/node-app:21
           ports:
             - containerPort: 8080
